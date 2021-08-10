@@ -6,7 +6,7 @@
   </a>
 </p>
 
-- The tiniest OS.
+- The tiniest OS, or you can call it a make-believe OS.
 - It writes a number (for namesake, consider 0xCAFEBABE) to eax register.
 
 loader.s:
@@ -27,16 +27,16 @@ link.ld:
 ```
 ld -T link.ld -melf_i386 loader.o -o kernel.elf
 ```
-- The above command generates a <a href="">file</a> that is to be passed to the linker.
+
 run kernel:
 
-I write code on WSL-Ubuntu, qemu doesn't work as gui is not available. You can either add --nographic or --curses to startup qemu.
+I write code on WSL-Ubuntu, qemu doesn't work as gui is not available. You can either add options --nographic or --curses to startup qemu.
 
 ```
 qemu-system-i386 -monitor stdio -kernel kernel.elf --curses
 ```
 
-To check if it served its purpose, press alt + 2 to enter qemu monitor
+To check if it served its purpose, press alt + 2 to enter qemu monitor.
 ```
 (qemu) info registers
 ```
