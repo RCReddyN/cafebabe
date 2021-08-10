@@ -43,6 +43,8 @@ To check if it served its purpose, press alt + 2 to enter qemu monitor.
 
 You should see that EAX is loaded with the number 0xCAFEBABE.
 
+This is directly picked up from <a href="https://littleosbook.github.io/">The Little OS Book</a>.
+
 ## Author
 
 👤 **Ravi Chandra N Reddy**
